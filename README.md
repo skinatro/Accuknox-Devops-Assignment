@@ -1,3 +1,5 @@
+[![Build and Push Docker Image](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/ci.yaml/badge.svg)](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/ci.yaml)
+
 # Problem Statement 1
 
 I am using a local kubernates environment using k3d with 2 agent nodes and Traefik as the Ingress Controller
