@@ -4,6 +4,9 @@ I am using a local kubernates environment using k3d with 2 agent nodes and going
 
 
 - [X] Dockerization
-- [ ] Kubernates
+- [X] Kubernates
+- [ ] CI/CD
+  - [X] CI
+  - [ ] CD
 
 
