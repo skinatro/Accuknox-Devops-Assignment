@@ -1,8 +1,7 @@
-[![Build and Push Docker Image](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/ci.yaml/badge.svg)](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/ci.yaml)
-
+[![Build and Deploy to AWS](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml/badge.svg)](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml)
 # Problem Statement 1
 
-I am using AWS EKS and ECR with ALB 
+I am using AWS EKS and ECR with ALB   
 
 - [X] Dockerization
 - [X] Kubernates
