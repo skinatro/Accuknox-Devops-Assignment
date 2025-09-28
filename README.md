@@ -8,14 +8,19 @@ I am using AWK Stack -> ECR for image registry, EKS, ELB as the ingress controll
 - [X] CI/CD
   - [X] CI
   - [X] CD
-- [ ] TLS (Issued)
+- [X] TLS
 
 domain -> [k8s.skinatro.tech](http://k8s.skinatro.tech)
+
+## Output
+
+![The Output works](./output.png)
+![TLS Also Works](./TLS.png)
 
 ## Improvements
 
 I could have used an alpine image for smaller image size and lesser attack surface but i was not sure if i could use it or not
 
-## Problem Statement 2
+# Problem Statement 2
 
 I have decided to attempt the Application Health Checker in python and the System Health Monitoring Script in bash
