@@ -14,8 +14,8 @@ domain -> [k8s.skinatro.tech](http://k8s.skinatro.tech)
 
 ## Output
 
-![The Output works](./output.png)
-![TLS Also Works](./TLS.png)
+![The Output works](./assets/output.png)
+![TLS Also Works](./assets/TLS.png)
 
 ## Improvements
 
@@ -24,3 +24,8 @@ I could have used an alpine image for smaller image size and lesser attack surfa
 # Problem Statement 2
 
 I have decided to attempt the Application Health Checker in python and the System Health Monitoring Script in bash
+The Solutions are in [./ProblemStatement2](./ProblemStatement2)
+
+# Problem Statement 3
+
+The policy is in [./policies](./policies)
