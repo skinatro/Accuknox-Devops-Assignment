@@ -55,6 +55,8 @@ jobs:
           sed -i.bak "s|skinatro/wisecow:latest|${IMAGE}|g" manifests/deployments.yaml
           kubectl apply -f manifests/namespace.yaml
           kubectl apply -f manifests/
+          kubectl apply -f policies/
+
 
       - name: Wait for rollout
         run: |

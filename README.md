@@ -1,4 +1,5 @@
 [![Build and Deploy to AWS](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml/badge.svg)](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml)
+
 # Problem Statement 1
 
 I am using AWK Stack -> ECR for image registry, EKS, ELB as the ingress controller and ACM for certs
@@ -24,6 +25,7 @@ I could have used an alpine image for smaller image size and lesser attack surfa
 # Problem Statement 2
 
 I have decided to attempt the Application Health Checker in python and the System Health Monitoring Script in bash
+
 The Solutions are in [./ProblemStatement2](./ProblemStatement2)
 
 # Problem Statement 3
