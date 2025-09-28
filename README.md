@@ -1,14 +1,16 @@
 [![Build and Deploy to AWS](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml/badge.svg)](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml)
 # Problem Statement 1
 
-I am using AWS EKS and ECR with ALB   
+I am using AWK Stack -> ECR for image registry, EKS, ELB as the ingress controller and ACM for certs
 
 - [X] Dockerization
 - [X] Kubernates
-- [ ] CI/CD
+- [X] CI/CD
   - [X] CI
-  - [ ] CD
-- [ ] TLS 
+  - [X] CD
+- [ ] TLS (Issued)
+
+domain -> [k8s.skinatro.tech](http://k8s.skinatro.tech)
 
 ## Improvements
 
