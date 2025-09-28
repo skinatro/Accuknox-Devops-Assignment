@@ -52,7 +52,7 @@ jobs:
         run: |
           set -euo pipefail
           IMAGE="${ECR_REGISTRY}/${ECR_REPOSITORY}:${IMAGE_TAG}"
-          sed -i.bak "s|skinatro/wisecow:latest|${IMAGE}|g" manifests/deployment.yaml
+          sed -i.bak "s|skinatro/wisecow:latest|${IMAGE}|g" manifests/deployments.yaml
           kubectl apply -f manifests/namespace.yaml
           kubectl apply -f manifests/
 
