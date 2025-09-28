@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 CPU_THR=80
 MEM_THR=80
 DISK_THR=80

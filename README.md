@@ -2,12 +2,12 @@
 
 # Problem Statement 1
 
-I am using AWS EKS and ECR 
+I am using AWS EKS and ECR with ALB 
 
 - [X] Dockerization
 - [X] Kubernates
 - [ ] CI/CD
-  - [ ] CI
+  - [X] CI
   - [ ] CD
 - [ ] TLS 
 

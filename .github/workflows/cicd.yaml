@@ -22,7 +22,7 @@ jobs:
           role-session-name: gha-ecr-push
           aws-region: ap-south-1
 
-      - name: Login to Amazon ECR
+      - name: Login to ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
@@ -34,3 +34,28 @@ jobs:
         run: |
           docker build -t "$REGISTRY/$REPOSITORY:$IMAGE_TAG" .
           docker push "$REGISTRY/$REPOSITORY:$IMAGE_TAG"
+
+      - name: Setup Cluster
+        env:
+          AWS_REGION: ap-south-1
+          EKS_CLUSTER_NAME: accuknox-assignment
+        run: |
+          aws eks update-kubeconfig \
+            --name "${EKS_CLUSTER_NAME}" \
+            --region "${AWS_REGION}"
+
+      - name: Deploy to EKS
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: accuknox/assignment
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          IMAGE="${ECR_REGISTRY}/${ECR_REPOSITORY}:${IMAGE_TAG}"
+          sed -i.bak "s|skinatro/wisecow:latest|${IMAGE}|g" manifests/deployment.yaml
+          kubectl apply -f manifests/namespace.yaml
+          kubectl apply -f manifests/
+
+      - name: Wait for rollout
+        run: |
+          kubectl rollout status deployment/wisecow-depl -n wisecow --timeout=180s
