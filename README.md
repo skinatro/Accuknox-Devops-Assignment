@@ -2,12 +2,12 @@
 
 # Problem Statement 1
 
-I am using a local kubernates environment using k3d with 2 agent nodes and Traefik as the Ingress Controller
+I am using AWS EKS and ECR 
 
 - [X] Dockerization
 - [X] Kubernates
 - [ ] CI/CD
-  - [X] CI
+  - [ ] CI
   - [ ] CD
 - [ ] TLS 
 
