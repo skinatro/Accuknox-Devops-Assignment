@@ -12,6 +12,7 @@ I am using AWK Stack -> ECR for image registry, EKS, ELB as the ingress controll
 - [X] TLS
 
 domain -> [k8s.skinatro.tech](http://k8s.skinatro.tech)
+(the ec2 instance will be stopped when you try to visit so the site wont load)
 
 ## Output
 
