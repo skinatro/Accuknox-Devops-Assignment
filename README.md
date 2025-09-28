@@ -1,5 +1,7 @@
 [![Build and Deploy to AWS](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml/badge.svg)](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml)
 
+The latest CI fails cuz the ec2 instance was shut down, please check out the previous runs for passing tests
+
 # Problem Statement 1
 
 I am using AWK Stack -> ECR for image registry, EKS, ELB as the ingress controller and ACM for certs
@@ -12,7 +14,7 @@ I am using AWK Stack -> ECR for image registry, EKS, ELB as the ingress controll
 - [X] TLS
 
 domain -> [k8s.skinatro.tech](http://k8s.skinatro.tech)
-(the ec2 instance will be stopped when you try to visit so the site wont load)
+(the ec2 instance will be stopped when you try to visit so the site wont load , the build failed due to the same reason)
 
 ## Output
 
