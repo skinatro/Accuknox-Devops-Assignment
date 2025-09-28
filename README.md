@@ -1,6 +1,6 @@
 [![Build and Deploy to AWS](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml/badge.svg)](https://github.com/skinatro/Accuknox-Devops-Assignment/actions/workflows/cicd.yaml)
 
-The latest CI fails cuz the ec2 instance was shut down, please check out the previous runs for passing tests
+The latest CI fails because the ec2 instance was shut down, please check out the previous runs for passing tests
 
 # Problem Statement 1
 
@@ -28,7 +28,7 @@ TLS is enforced
 
 ## Improvements
 
-I could have used an alpine image for smaller image size and lesser attack surface but i was not sure if i could use it or not
+I could have used an alpine image for smaller image size and lesser attack surface but i was not sure if i was allowed to use it
 
 # Problem Statement 2
 
@@ -46,4 +46,4 @@ Zero Trust Policy Logs (Audit Mode)
 
 ![Access Blocked](./assets/violation-blocked.png)
 
-Zero Trust Block Mode prevents others binaries from being executed
+Zero Trust Block Mode prevents other binaries from being executed
