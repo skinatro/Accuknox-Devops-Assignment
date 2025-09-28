@@ -11,3 +11,5 @@ spec:
     matchPaths:
       - path: /usr/src/app/wisecow.sh
   action: Allow
+
+  kubectl -n wisecow exec -it wisecow-depl-58fd77fc7-4vv9w  -- /bin/sh -c 'echo hello'

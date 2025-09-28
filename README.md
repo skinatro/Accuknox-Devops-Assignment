@@ -16,7 +16,12 @@ domain -> [k8s.skinatro.tech](http://k8s.skinatro.tech)
 ## Output
 
 ![The Output works](./assets/output.png)
+
+Output works
+
 ![TLS Also Works](./assets/TLS.png)
+
+TLS is enforced
 
 ## Improvements
 
@@ -31,3 +36,11 @@ The Solutions are in [./ProblemStatement2](./ProblemStatement2)
 # Problem Statement 3
 
 The policy is in [./policies](./policies)
+
+![Audit Mode](./assets/audit-mode.png)
+
+Zero Trust Policy Logs (Audit Mode) 
+
+![Access Blocked](./assets/violation-blocked.png)
+
+Zero Trust Block Mode prevents others binaries from being executed
